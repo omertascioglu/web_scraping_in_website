@@ -74,7 +74,7 @@ def link_to_find_cat(link_name):
 
 def main():
     """Iterates over a list of barcode numbers and checks their names."""
-    df = pd.read_csv("Kitap1.csv")
+    df = pd.read_csv("book.csv")
     csv_file = "sample_data.csv"
 
     barcode_numbers = df["BARCODE"]
