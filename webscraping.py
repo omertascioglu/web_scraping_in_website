@@ -9,13 +9,11 @@ def search_marketpaketi_barcode_name(barcode_number):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
 
-    # Find the first search result that contains the barcode number.
     search_result = soup.find("a", class_="urun_gorsel")
     if search_result is None:
         print("Empty search result")
         return None
 
-    # Extract the href attribute value
     link_name = search_result['href']
 
     return link_name
@@ -76,7 +74,7 @@ def link_to_find_cat(link_name):
 
 def main():
     """Iterates over a list of barcode numbers and checks their names."""
-    df = pd.read_csv("trendbox.csv")
+    df = pd.read_csv("Kitap1.csv")
     csv_file = "sample_data.csv"
 
     barcode_numbers = df["BARCODE"]
