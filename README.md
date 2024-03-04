@@ -1,5 +1,3 @@
-# web_scraping_in_website
-
 # Trendbox firmasında geliştirdiğim otomatikleştirme projesi
 
 # İlk Olarak elimizdeki tanımsız barcodeları bir websitesinde aratıyoruz bunu Beautiful Soup ile yapıyoruz. Ardından elde ettiğimiz ürünün fotoğrafından,yeni görünümden, url ile ürün sayfasına geçiş yapıyoruz
